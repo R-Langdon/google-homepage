@@ -1,0 +1,190 @@
+body {
+  background-color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  text-align: center;
+  margin: 15px 10px;
+  padding: 7px 0;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+nav ul .alignRight {
+  float: right;
+}
+
+nav ul li .button {
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  background-color: #4285f4;
+  padding: 7px 12px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+}
+
+nav ul li .appsIcon {
+  padding: 4px 0;
+  opacity: 0.6;
+}
+
+/*MAIN*/
+
+main {
+  width: fit-content;
+  margin: 130px auto;
+}
+
+main img {
+  display: block;
+  width: 272px;
+  margin: 0 auto 30px auto;
+}
+
+main div {
+  display: grid;
+  grid-template-columns: 49px auto 49px;
+  width: 484px;
+  height: 46px;
+  border: 1px solid #E0E0E0;
+  border-radius: 26px;
+}
+
+main div input {
+  display: block;
+  grid-column: 2/3;
+  align-self: center;
+  height: 34px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: arial, sans-serif;
+}
+
+main div #searchIcon {
+  justify-self: center;
+  align-self: center;
+  opacity: 0.5;
+}
+
+main div img {
+  display: block;
+  width: 16px;
+  height: 20px;
+  margin: 13px auto;
+}
+
+main section {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: 58px;
+  margin-top: 18px;
+  padding: 11px 0;
+}
+
+main section a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ededed;
+  border-radius: 4px;
+  color: #000;
+  opacity: 0.75;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  text-align: center;
+  padding: 11px 16px;
+  margin: 0 4px;
+}
+
+/*FOOTER*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+footer h3 {
+  font-size: 15px;
+  padding: 12px 27px;
+  margin: 0;
+  font-family: arial, sans-serif;
+  color: rgba(0,0,0,.54);
+  font-weight: 500;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0 17px;
+  margin: 0;
+}
+
+footer ul li {
+  float: left;
+}
+
+footer ul .alignRight {
+  float: right;
+}
+
+footer ul li a {
+  display: block;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  text-align: center;
+  margin: 5px 10px;
+  padding: 7px 0;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+nav ul li a:hover, footer ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li .button:hover {
+  text-decoration: none;
+  box-shadow: 1px 1px 2px #C4C4C4;
+}
+
+nav ul li .appsIcon:hover {
+  opacity: 1;
+}
+
+main div:hover {
+  box-shadow: 0px 0px 3px #C4C4C4;
+}
+
+main section a:hover {
+  box-shadow: 0px 0px 2px #5F6368;
+}
