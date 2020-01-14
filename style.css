@@ -1,14 +1,6 @@
 body {
-  background-color: red;
   margin: 0;
   padding: 0;
-}
-
-.wrapper {
-  position: relative;
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
 }
 
 nav ul {
@@ -55,18 +47,18 @@ nav ul li .appsIcon {
 
 /*MAIN*/
 
-main {
+.indexMain {
   width: fit-content;
   margin: 130px auto;
 }
 
-main img {
+.indexMain img {
   display: block;
   width: 272px;
   margin: 0 auto 30px auto;
 }
 
-main div {
+.indexMain .searchBox {
   display: grid;
   grid-template-columns: 49px auto 49px;
   width: 484px;
@@ -75,7 +67,7 @@ main div {
   border-radius: 26px;
 }
 
-main div input {
+.indexMain .searchBox input {
   display: block;
   grid-column: 2/3;
   align-self: center;
@@ -86,20 +78,20 @@ main div input {
   font-family: arial, sans-serif;
 }
 
-main div #searchIcon {
+.indexMain .searchBox #searchIcon {
   justify-self: center;
   align-self: center;
   opacity: 0.5;
 }
 
-main div img {
+.indexMain .searchBox img {
   display: block;
   width: 16px;
   height: 20px;
   margin: 13px auto;
 }
 
-main section {
+.indexMain section {
   box-sizing: border-box;
   text-align: center;
   width: 100%;
@@ -108,7 +100,7 @@ main section {
   padding: 11px 0;
 }
 
-main section a {
+.indexMain section a {
   display: inline-block;
   text-decoration: none;
   background-color: #ededed;
@@ -123,14 +115,14 @@ main section a {
 }
 
 /*FOOTER*/
-footer {
-  position: absolute;
+.indexFooter {
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #f2f2f2;
 }
 
-footer h3 {
+.indexFooter p {
   font-size: 15px;
   padding: 12px 27px;
   margin: 0;
@@ -141,21 +133,21 @@ footer h3 {
   border-bottom: 1px solid #E0E0E0;
 }
 
-footer ul {
+.indexFooter ul {
   list-style-type: none;
   padding: 0 17px;
   margin: 0;
 }
 
-footer ul li {
+.indexFooter ul li {
   float: left;
 }
 
-footer ul .alignRight {
+.indexFooter ul .alignRight {
   float: right;
 }
 
-footer ul li a {
+.indexFooter ul li a {
   display: block;
   font-family: arial, sans-serif;
   font-size: 13px;
@@ -167,7 +159,9 @@ footer ul li a {
   opacity: 0.75;
 }
 
-nav ul li a:hover, footer ul li a:hover {
+/*HOVERS*/
+
+nav ul li a:hover, .indexFooter ul li a:hover {
   text-decoration: underline;
 }
 
@@ -180,35 +174,10 @@ nav ul li .appsIcon:hover {
   opacity: 1;
 }
 
-main div:hover {
+main .searchBox:hover {
   box-shadow: 0px 0px 3px #C4C4C4;
 }
 
 main section a:hover {
   box-shadow: 0px 0px 2px #5F6368;
-}
-
-@media only screen and (max-width: 500px) {
-  nav ul li a {
-    font-size: 8px;
-    margin: 15px 5px;
-  }
-  nav ul li .appsIcon {
-    padding: 4px 0;
-    margin: 12px 5px;
-  }
-  /*MAIN*/
-  main div {
-    width: 310px;
-  } 
-  /*FOOTER*/
-  footer ul li a {
-    font-size: 8px;
-    padding: 4px 0;
-    margin: 5px 10px;
-  }
-  footer h3 {
-    font-size: 8px;
-    padding: 9px 27px;
-  }
 }
